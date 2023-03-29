@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+body{
+    /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);     */
+    /* background-image: url("Imgs/blurry-gradient-haikei.svg"); */
+    background-image: url("Imgs/sean-sinclair-C_NJKfnTR5A-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search img{
+    width:20px;
+    height:20px;
+    margin-left: 10px;
+}
+
+input{
+    border-radius: 20px 20px;
+    border: none;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+}
+
+button{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.daysOfTheWeek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.daysOfTheWeek *{
+    margin: 10px;
+}
+
+.day{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 10vw;
+    height: 20vh;
+    transition: all 300ms;
+    border: 1px solid black;
+}
+
+.day:hover{
+    transform: scale(1.2);
+}
+
+h2{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.highLightWrapper{
+    display: flex;
+}
+
+.highLightWrapper *{
+    margin: 10px;
+}
+.daysOfTheWeek img{
+    width: 5vw;
+    height: 10vh;
+}
+
+.location{
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "todayTemp todayTemp sunrise sunset precipitation"
+    "todayTemp todayTemp humidity wind pressure";
+    margin-top: 30px;
+}
+
+.grid *{
+    margin: 3px;
+}
+.todayTemp{
+    grid-area: todayTemp;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todayTemp img{
+    width:8vh;
+    height: 8vh;
+}
+
+.todayTemp h2{
+    margin-top: 0px;
+}
+.sunrise{
+    grid-area: sunrise;
+}
+
+.sunset{
+    grid-area: sunset;
+}
+
+.precipitation{
+    grid-area: precipitation;
+}
+
+.humidity{
+    grid-area: humidity;
+}
+
+.wind{
+    grid-area: wind;
+}
+
+.pressure{
+    grid-area: pressure;
+}
+
+.tempInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+
+footer img{
+    width: 3vw;
+    height: 5vh;
+    margin-bottom: 10px;
+}
+
+.title{
+    margin-top: 70px;
+}
+
+h4{
+    font-weight: 500;
+}

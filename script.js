@@ -1,0 +1,1 @@
+let weatherDetails = ["todayTemp", "sunrise", "sunset", "precipitation", "humidity", "wind", "pressure"];
